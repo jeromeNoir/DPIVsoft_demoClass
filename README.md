@@ -1,5 +1,9 @@
 # DPIVsoft_demoClass
 
+This routine and codes require that you have intalled the PIV processing software "dpivsoft". 
+
+The code is open source available at: https://pypi.org/project/dpivsoft/ 
+
 To Install DPIVpy
 
 * create a environment
