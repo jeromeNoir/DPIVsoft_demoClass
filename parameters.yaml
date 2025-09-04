@@ -1,11 +1,19 @@
 input_folder: './Example/Images/'
 output_folder: './Example/Results'
 extension: 'png'
+overlap_x: 50 #0verlap in % in the x-direction
+overlap_y: 50 #0verlap in % in the y-direction
+
+processAll: False #True=process all files in the directory, False=process a subset of images
+startImage: 0 #First image to process (0=first image in the directory)
+endImage: 5 #Last image to process (3=4th image in the directory) if processAll=True, this parameter is ignored
+processEvery: 2
+
 
 box_size_1_x: 64
 box_size_1_y: 64
-no_boxes_1_x: 32
-no_boxes_1_y: 32
+no_boxes_1_x: 128
+no_boxes_1_y: 128
 window_1_x: 32
 window_1_y: 32
 
@@ -16,8 +24,8 @@ direct_calc: 0
 
 box_size_2_x: 32
 box_size_2_y: 32
-no_boxes_2_x: 64
-no_boxes_2_y: 64
+no_boxes_2_x: 256
+no_boxes_2_y: 256
 window_2_x: 16
 window_2_y: 16
 
@@ -26,6 +34,6 @@ peak_ratio:  1
 weighting: 0
 gaussian_size: 5
 median_limit: 0.1
-calibration: 1
-delta_t: 1
+calibration: 0.00011494252873563218 # in m/px
+delta_t: 0.016666666666666666 #in s (0.016666666666666666 for 60fps, 0.03333333333333333 for 30fps ...)
 
