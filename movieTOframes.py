@@ -34,7 +34,7 @@ def split_movie(input_file, output_dir):
     ok, frame = video.read()
     while ok:
         # Save each frame as a JPG file
-        frame_filename = os.path.join(output_dir, f"frame_{count:04d}.jpg")
+        frame_filename = os.path.join(output_dir, f"frame_{count:05d}.jpg")
         cv2.imwrite(frame_filename, frame)
         print(f"Written frame: {frame_filename}")
         count += 1
